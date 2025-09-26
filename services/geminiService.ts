@@ -20,7 +20,8 @@ export const getAiResponse = async (prompt: string, history: ChatHistory) => {
             }
         });
         
-        const result = await chat.sendMessage(prompt);
+        // FIX: The `sendMessage` method expects an object with a `message` property.
+        const result = await chat.sendMessage({ message: prompt });
         
         return result.text;
 

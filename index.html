@@ -7,21 +7,23 @@
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#047857" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Mapbox GL CSS from esm.sh -->
+  <link rel="stylesheet" href="https://esm.sh/mapbox-gl@3.4.0/dist/mapbox-gl.css" />
   <script type="importmap">
 {
   "imports": {
-    "react": "https://aistudiocdn.com/react@18.2.0",
-    "react-dom/client": "https://aistudiocdn.com/react-dom@18.2.0/client",
-    "react/": "https://aistudiocdn.com/react@18.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@1.21.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@0.544.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@18.2.0/"
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.1.1/client",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "lucide-react": "https://esm.sh/lucide-react@0.408.0",
+    "@google/genai": "https://esm.sh/@google/genai@0.14.0",
+    "react-map-gl": "https://esm.sh/react-map-gl@8.0.0",
+    "mapbox-gl": "https://esm.sh/mapbox-gl@3.4.0",
+    "react-map-gl/": "https://aistudiocdn.com/react-map-gl@^8.0.4/"
   }
 }
 </script>
-  <!-- Mapbox GL JS -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body class="bg-gray-50 dark:bg-slate-900">
   <noscript>You need to enable JavaScript to run this app.</noscript>
